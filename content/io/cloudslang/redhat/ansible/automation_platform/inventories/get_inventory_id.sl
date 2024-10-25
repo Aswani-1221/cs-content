@@ -67,7 +67,7 @@ flow:
     - Convert_whitespaces:
         worker_group: '${worker_group}'
         do:
-          io.cloudslang.redhat.ansible_tower.utils.search_and_replace:
+          io.cloudslang.base.strings.search_and_replace:
             - origin_string: '${inventory_name}'
             - text_to_replace: ' '
             - replace_with: '%20'
