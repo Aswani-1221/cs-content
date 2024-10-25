@@ -77,6 +77,7 @@ flow:
           - organization_name: '${replaced_string}'
         navigate:
           - SUCCESS: get_organization_details
+          - FAILURE: on_failure
     - get_organization_details:
         worker_group:
           value: '${worker_group}'

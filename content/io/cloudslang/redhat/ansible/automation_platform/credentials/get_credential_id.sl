@@ -91,6 +91,7 @@ flow:
           - CredentialName: '${replaced_string}'
         navigate:
           - SUCCESS: Connect_to_Ansible_Tower
+          - FAILURE: on_failure
     - Connect_to_Ansible_Tower:
         worker_group:
           value: '${worker_group}'

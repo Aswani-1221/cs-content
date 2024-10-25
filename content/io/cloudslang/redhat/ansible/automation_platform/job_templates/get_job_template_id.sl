@@ -79,6 +79,7 @@ flow:
           - TemplateName: '${replaced_string}'
         navigate:
           - SUCCESS: connect_to_ansible_tower
+          - FAILURE: on_failure
     - connect_to_ansible_tower:
         worker_group:
           value: '${worker_group}'

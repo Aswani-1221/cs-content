@@ -77,6 +77,7 @@ flow:
           - project_name: '${replaced_string}'
         navigate:
           - SUCCESS: get_project_details
+          - FAILURE: on_failure
     - get_project_details:
         worker_group:
           value: '${worker_group}'
