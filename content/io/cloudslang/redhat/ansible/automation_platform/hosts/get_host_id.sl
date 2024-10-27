@@ -93,7 +93,7 @@ flow:
         publish:
           - host_name: '${replaced_string}'
         navigate:
-          - SUCCESS: connect_to_ansible_tower
+          - SUCCESS: Connect_to_Ansible_Tower
           - FAILURE: on_failure
     - connect_to_ansible_tower:
         worker_group:
